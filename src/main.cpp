@@ -3,7 +3,6 @@
 #include "NotesManager.h"
 #include "NotebookObserver.h"
 
-// Observer che stampa su console quando cambia la size del notebook
 class ConsoleObserver : public NotebookObserver {
 public:
     explicit ConsoleObserver(const std::string& label) : label(label) {}
@@ -123,14 +122,11 @@ int main() {
                 std::cout << "Text:\n" << note->getText() << "\n";
             }
         }
-
-
         else if (choice == 0) {
             std::cout << "Bye!\n";
         } else {
             std::cout << "Invalid choice.\n";
         }
     }
-
     return 0;
 }

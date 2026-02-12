@@ -4,9 +4,7 @@ project(noteapp_cpp LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# ---------------------------
 # LIBRERIA con le classi (src)
-# ---------------------------
 add_library(notes_lib
         src/Note.cpp
         src/Notebook.cpp
@@ -18,9 +16,7 @@ target_include_directories(notes_lib
         ${CMAKE_CURRENT_SOURCE_DIR}/src
 )
 
-# ---------------------------
 # ESEGUIBILE APP (main)
-# ---------------------------
 add_executable(noteapp_cpp
         src/main.cpp
 )
@@ -30,9 +26,7 @@ target_link_libraries(noteapp_cpp
         notes_lib
 )
 
-# ---------------------------
 # TEST (GoogleTest)
-# ---------------------------
 include(FetchContent)
 
 FetchContent_Declare(
@@ -57,7 +51,6 @@ target_link_libraries(noteapp_tests
         notes_lib
 )
 
-# include path per i test (così #include "Note.h" funziona)
 target_include_directories(noteapp_tests
         PRIVATE
         ${CMAKE_CURRENT_SOURCE_DIR}/src

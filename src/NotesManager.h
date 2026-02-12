@@ -4,10 +4,7 @@
 
 #ifndef NOTEAPP_CPP_NOTESMANAGER_H
 #define NOTEAPP_CPP_NOTESMANAGER_H
-
-
 #pragma once
-
 #include <string>
 #include "Notebook.h"
 
@@ -29,7 +26,5 @@ private:
     Notebook mainNb;
     Notebook importantNb;
 };
-
-
 
 #endif //NOTEAPP_CPP_NOTESMANAGER_H

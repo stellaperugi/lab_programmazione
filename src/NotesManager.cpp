@@ -1,6 +1,4 @@
 #include "NotesManager.h"
-
-#include "NotesManager.h"
 #include <memory>
 
 NotesManager::NotesManager()
