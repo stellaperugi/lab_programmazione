@@ -5,7 +5,7 @@
 
 class Note {
 public:
-    Note(const std::string& title, const std::string& text);
+    Note(const std::string& title, const std::string& text); //costruttore
 
     const std::string& getTitle() const;
     const std::string& getText() const;
@@ -21,10 +21,10 @@ public:
     void setImportant(bool value);
     bool isImportant() const;
 
-private:
+private://  Attributi
     std::string title;
     std::string text;
-    bool locked{false};
+    bool locked{false}; //  Attribuiti inizializzati a falso e falso
     bool important{false};
 };
 

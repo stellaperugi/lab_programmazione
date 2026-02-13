@@ -1,6 +1,3 @@
-//
-// Created by Stella Perugi on 11/02/26.
-//
 
 #ifndef NOTEAPP_CPP_NOTESMANAGER_H
 #define NOTEAPP_CPP_NOTESMANAGER_H
@@ -22,7 +19,7 @@ public:
     bool removeNote(size_t index);
     bool toggleImportant(size_t index);
 
-private:
+private: //attribuiti, sono notebook di default
     Notebook mainNb;
     Notebook importantNb;
 };
